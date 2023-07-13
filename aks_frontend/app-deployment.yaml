@@ -18,8 +18,8 @@ spec:
       - name: frontend-app
         image: [tu usuario docker]/frontend-app:latest
         env:
-        - name: MYSQL_IP
-          value: [MySQL IP]
+        - name: BACKEND_IP
+          value: [BACKEND IP]
         - name: CROSS_IP
           value: [CORS IP]
         ports:
