@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "API de Inventario",
+        "description": "API para gestionar inventario"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3000"
+        }
+    ],
+    "paths": {
+        "/": {
+            "get": {
+                "summary": "Obtener todos los productos",
+                "responses": {
+                    "200": {
+                        "description": "Lista de productos"
+                    }
+                }
+            }
+        },
+        "/{id}": {
+            "get": {
+                "summary": "Obtener detalles de producto",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "required": true,
+                        "description": "ID de producto",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Detalle de producto"
+                    }
+                }
+            }
+        }
+    }
+}
