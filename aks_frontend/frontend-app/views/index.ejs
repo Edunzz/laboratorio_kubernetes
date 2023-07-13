@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Productos</h1>
+    <ul>
+        <% productos.forEach(producto => { %>
+            <li>
+                <%= producto.nombre_producto %>: $<%= producto.precio_unidad %>
+                <a href="/compra">Comprar</a>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
