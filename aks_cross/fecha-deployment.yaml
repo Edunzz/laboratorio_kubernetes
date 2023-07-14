@@ -29,6 +29,6 @@ spec:
     app: fecha-app
   ports:
     - protocol: TCP
-      port: 80
+      port: 4000
       targetPort: 4000
   type: LoadBalancer
