@@ -5,11 +5,13 @@ docker login
 <br>
 docker push edunzz/otel_demo:compra-app
 <br>
+<br>
 docker build -t edunzz/otel_demo:fecha-app .
 <br>
 docker login
 <br>
 docker push edunzz/otel_demo:fecha-app
+<br>
 <br>
 docker build -t edunzz/otel_demo:impuesto-app .
 <br>
