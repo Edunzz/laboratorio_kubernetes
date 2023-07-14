@@ -40,12 +40,10 @@ kind: Service
 metadata:
   name: mysql-service
 spec:
+  ports:
+  - port: 3306
   selector:
     app: mysql
-  ports:
-    - protocol: TCP
-      port: 3306
-      targetPort: 3306
 ---
 apiVersion: v1
 kind: ConfigMap
