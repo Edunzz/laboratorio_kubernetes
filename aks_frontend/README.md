@@ -1,5 +1,10 @@
-docker build -t edunzz/frontend-app .
+# Docker create image and upload
+docker build -t edunzz/otel_demo:compra-app .
 <br>
-docker push edunzz/frontend-app
+docker login
 <br>
+docker push edunzz/otel_demo:compra-app
+<br>
+# Up applications and services AKS
 kubectl apply -f app-deployment.yaml
+<br>
