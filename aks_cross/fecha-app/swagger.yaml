@@ -3,7 +3,7 @@ info:
   version: 1.0.0
   title: Servicio fecha
 paths:
-  /compra/{id}:
+  /fecha/{id}:
     get:
       summary: Genera y agrega la fecha
       parameters:
