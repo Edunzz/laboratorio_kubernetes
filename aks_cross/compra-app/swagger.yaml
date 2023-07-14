@@ -5,7 +5,7 @@ info:
 paths:
   /[endpoint del servicio]:
     get:
-      summary: Obtiene la información genera el numero de compra
+      summary: Genera y agrega el numero de compra
       responses:
         '200':
           description: Operación exitosa
