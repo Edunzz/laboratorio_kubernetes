@@ -1,0 +1,15 @@
+{
+  "name": "fecha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fecha.js",
+  "scripts": {
+    "start": "node fecha.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.6",
+    "swagger-ui-express": "^4.3.0",
+    "swagger-jsdoc": "^7.0.0"
+  }
+}
