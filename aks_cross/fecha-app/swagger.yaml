@@ -1,0 +1,11 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Servicio fecha
+paths:
+  /[endpoint del servicio]:
+    get:
+      summary: Agrega fecha de compra
+      responses:
+        '200':
+          description: Operación exitosa
