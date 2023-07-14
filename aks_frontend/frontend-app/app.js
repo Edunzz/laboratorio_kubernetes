@@ -11,7 +11,7 @@ app.get('/', async (req, res) => {
 });
 
 app.get('/compra/:id', async (req, res) => {
-    const response = await fetch(`http://${process.env.CROSS_IP}/compra/${id}`);
+    const response = await fetch(`http://${process.env.CROSS_COMPRA_IP}/compra/${id}`);
     const resultado = await response.text();
     res.render('compra', { resultado });
 });
