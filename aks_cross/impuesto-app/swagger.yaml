@@ -3,7 +3,7 @@ info:
   version: 1.0.0
   title: Servicio impuesto
 paths:
-  /compra/{id}:
+  /impuesto/{id}:
     get:
       summary: Obtiene la información de producto y agrega importe y moneda de impuesto
       parameters:
