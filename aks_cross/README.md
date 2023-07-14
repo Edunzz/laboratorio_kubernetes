@@ -20,11 +20,17 @@ docker login
 docker push edunzz/otel_demo:impuesto-cross
 <br>
 # Up applications and services AKS
+export BACKEND_IP=10.10.10.10
+<br>
 kubectl apply -f compra-deployment.yaml
 <br>
 kubectl apply -f fecha-deployment.yaml
 <br>
-export BACKEND_IP=10.10.10.10
-<br>
 sed "s/--BACKEND_IP--/$BACKEND_IP/g" impuesto-deployment.yaml | kubectl apply -f -
 <br>
+# Delete applications and services AKS
+kubectl apply -f compra-deployment.yaml
+<br>
+kubectl apply -f fecha-deployment.yaml
+<br>
+kubectl apply -f impuesto-deployment.yaml
