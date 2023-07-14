@@ -24,5 +24,7 @@ kubectl apply -f compra-deployment.yaml
 <br>
 kubectl apply -f fecha-deployment.yaml
 <br>
-kubectl apply -f impuesto-deployment.yaml
+export BACKEND_IP=10.10.10.10
+<br>
+envsubst < impuesto-deployment.yaml | kubectl apply -f -
 <br>
