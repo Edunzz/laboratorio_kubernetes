@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: inventario-app
-        image: [tu usuario docker]/inventario-app:latest
+        image: edunzz/inventario-app:latest
         ports:
         - containerPort: 3000
 ---
