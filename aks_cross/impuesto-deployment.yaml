@@ -19,7 +19,7 @@ spec:
         image: edunzz/otel_demo:impuesto-cross
         env:
         - name: BACKEND_IP
-          value: 10.10.10.10
+          value: "${BACKEND_IP}"
         ports:
         - containerPort: 5000
 ---
