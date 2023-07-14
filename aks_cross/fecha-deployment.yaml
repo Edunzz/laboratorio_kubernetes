@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fecha-app
-        image: edunzz/otel_demo:fecha-app
+        image: edunzz/otel_demo:fecha-cross
         ports:
         - containerPort: 4000
 ---
