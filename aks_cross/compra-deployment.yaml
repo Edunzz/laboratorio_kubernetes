@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: compra-app
-        image: edunzz/otel_demo:compra-app1
+        image: edunzz/otel_demo:compra-cross
         ports:
         - containerPort: 3000
 ---
