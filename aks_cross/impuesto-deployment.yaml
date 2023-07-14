@@ -17,6 +17,9 @@ spec:
       containers:
       - name: impuesto-app
         image: [tu usuario docker]/impuesto-app:latest
+        env:
+        - name: BACKEND_IP
+          value: 10.10.10.10
         ports:
         - containerPort: 5000
 ---
