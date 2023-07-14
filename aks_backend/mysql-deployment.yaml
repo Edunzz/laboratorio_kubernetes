@@ -31,8 +31,6 @@ spec:
           mountPath: /docker-entrypoint-initdb.d
       volumes:
       - name: mysql-storage
-        persistentVolumeClaim:
-          claimName: mysql-pvc
       - name: init-db
         configMap:
           name: init-db
@@ -48,17 +46,6 @@ spec:
     - protocol: TCP
       port: 3306
       targetPort: 3306
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: mysql-pvc
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 1Gi
 ---
 apiVersion: v1
 kind: ConfigMap
