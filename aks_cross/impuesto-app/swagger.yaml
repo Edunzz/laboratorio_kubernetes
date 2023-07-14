@@ -1,11 +1,11 @@
 openapi: "3.0.0"
 info:
   version: 1.0.0
-  title: Servicio impuestos
+  title: Servicio impuesto
 paths:
-  /[endpoint del servicio]:
+  /impuesto/id:
     get:
-      summary: Obtiene la información de producto y agrega importe y moneda de los impuestos
+      summary: Obtiene la información de producto y agrega importe y moneda de impuesto
       responses:
         '200':
           description: Operación exitosa
