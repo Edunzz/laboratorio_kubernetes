@@ -1,0 +1,15 @@
+{
+  "name": "compra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compra.js",
+  "scripts": {
+    "start": "node compra.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.6",
+    "swagger-ui-express": "^4.3.0",
+    "swagger-jsdoc": "^7.0.0"
+  }
+}
