@@ -10,8 +10,8 @@ app.get('/', async (req, res) => {
     res.render('index', { productos });
 });
 
-app.get('/compra', async (req, res) => {
-    const response = await fetch(`${process.env.CROSS_IP}/compra`);
+app.get('/compra/:id', async (req, res) => {
+    const response = await fetch(`${process.env.CROSS_IP}/compra/${id}`);
     const resultado = await response.text();
     res.render('compra', { resultado });
 });
