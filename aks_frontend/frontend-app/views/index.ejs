@@ -6,7 +6,7 @@
         <% productos.forEach(producto => { %>
             <li>
                 <%= producto.nombre_producto %>: $<%= producto.precio_unidad %>
-                <a href="/compra">Comprar</a>
+                <a href="/compra/<%= producto.id %>">Comprar</a>
             </li>
         <% }); %>
     </ul>
