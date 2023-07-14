@@ -6,5 +6,8 @@ docker login
 docker push edunzz/kubernetes_lab:frontend-app
 <br>
 # Up applications and services AKS
-kubectl apply -f app-deployment.yaml
+export BACKEND_IP=10.10.10.10
+export BACKEND_IP=10.10.10.10
+<br>
+sed "s/--BACKEND_IP--/$BACKEND_IP/g" app-deployment.yaml | kubectl apply -f -
 <br>
