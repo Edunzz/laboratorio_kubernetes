@@ -11,6 +11,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get('/fecha/:id', async (req, res) => {
     const { id } = req.params;
     const response = await fetch(`http://impuesto-app-service:5000/impuesto/${id}`);
+    console.log(`http://impuesto-app-service:5000/impuesto/${id}`);
     const data = await response.json();
     const fecha = new Date();
     res.json({ ...data, fecha });
