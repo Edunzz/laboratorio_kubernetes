@@ -5,11 +5,7 @@
         "title": "API de Inventario",
         "description": "API para gestionar inventario"
     },
-    "servers": [
-        {
-            "url": "http://localhost:3000"
-        }
-    ],
+    "servers": [],
     "paths": {
         "/": {
             "get": {
