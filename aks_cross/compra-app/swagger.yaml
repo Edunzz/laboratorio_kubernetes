@@ -1,0 +1,11 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Servicio compra
+paths:
+  /[endpoint del servicio]:
+    get:
+      summary: Obtiene la información genera el numero de compra
+      responses:
+        '200':
+          description: Operación exitosa
