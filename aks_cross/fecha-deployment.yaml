@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fecha-app
-        image: edunzz/fecha-app:latest
+        image: edunzz/otel_demo:fecha-app
         ports:
         - containerPort: 4000
 ---
