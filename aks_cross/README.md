@@ -1,10 +1,9 @@
 # Docker create image and upload
-docker build -t edunzz/kubernetes_lab:compra-cross .
+docker build -t edunzz/kubernetes_lab:impuesto-cross .
 <br>
 docker login
 <br>
-docker push edunzz/kubernetes_lab:compra-cross
-<br>
+docker push edunzz/kubernetes_lab:impuesto-cross
 <br>
 docker build -t edunzz/kubernetes_lab:fecha-cross .
 <br>
@@ -12,13 +11,13 @@ docker login
 <br>
 docker push edunzz/kubernetes_lab:fecha-cross
 <br>
-<br>
-docker build -t edunzz/kubernetes_lab:impuesto-cross .
+docker build -t edunzz/kubernetes_lab:compra-cross .
 <br>
 docker login
 <br>
-docker push edunzz/kubernetes_lab:impuesto-cross
+docker push edunzz/kubernetes_lab:compra-cross
 <br>
+
 # Up applications and services AKS
 export BACKEND_IP=10.10.10.10
 <br>
