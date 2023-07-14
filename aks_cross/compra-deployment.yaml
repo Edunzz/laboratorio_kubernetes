@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: compra-app
-        image: [tu usuario docker]/compra-app:latest
+        image: edunzz/compra-app:latest
         ports:
         - containerPort: 3000
 ---
