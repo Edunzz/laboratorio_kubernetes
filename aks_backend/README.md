@@ -1,9 +1,9 @@
 # Docker create image and upload
-docker build -t edunzz/node-app:1.0 .
+docker build -t edunzz/otel_demo:inventario-app .
 <br>
 docker login
 <br>
-docker push edunzz/node-app:1.0
+docker push edunzz/otel_demo:inventario-app
 <br>
 # Up applications and services AKS
 <br>
