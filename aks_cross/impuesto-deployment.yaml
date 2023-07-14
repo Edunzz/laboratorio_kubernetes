@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: impuesto-app
-        image: edunzz/otel_demo:impuesto-app
+        image: edunzz/otel_demo:impuesto-cross
         env:
         - name: BACKEND_IP
           value: 10.10.10.10
