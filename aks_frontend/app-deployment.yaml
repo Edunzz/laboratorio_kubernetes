@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: edunzz/otel_demo:frontend-app
+        image: edunzz/kubernetes_lab:frontend-app
         env:
         - name: BACKEND_IP
-          value: 10.10.10.10
-        - name: CROSS_IP
-          value: 10.10.10.10
+          value: "--BACKEND_IP--"
+        - name: CROSS_COMPRA_IP
+          value: "--CROSS_COMPRA_IP--"
         ports:
         - containerPort: 3000
 ---
