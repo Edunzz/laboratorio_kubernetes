@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: inventario-app
-        image: edunzz/inventario-app:latest
+        image: edunzz/otel_demo:inventario-app
         ports:
         - containerPort: 3000
 ---
