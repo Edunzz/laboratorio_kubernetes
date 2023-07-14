@@ -5,17 +5,20 @@ docker login
 <br>
 docker push edunzz/kubernetes_lab:impuesto-cross
 <br>
+<br>
 docker build -t edunzz/kubernetes_lab:fecha-cross .
 <br>
 docker login
 <br>
 docker push edunzz/kubernetes_lab:fecha-cross
 <br>
+<br>
 docker build -t edunzz/kubernetes_lab:compra-cross .
 <br>
 docker login
 <br>
 docker push edunzz/kubernetes_lab:compra-cross
+<br>
 <br>
 
 # Up applications and services AKS
