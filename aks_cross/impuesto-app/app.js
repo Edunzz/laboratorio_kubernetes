@@ -11,6 +11,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get('/impuesto/:id', async (req, res) => {
     const { id } = req.params;
     const response = await fetch(`${process.env.BACKEND_IP}/${id}`);
+    console.log(`${process.env.BACKEND_IP}/${id}`);
     const data = await response.json();
     const importe = 20;
     const moneda = 'soles';
