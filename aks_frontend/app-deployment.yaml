@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: edunzz/frontend-app:latest
+        image: edunzz/otel_demo:frontend-app
         env:
         - name: BACKEND_IP
           value: 10.10.10.10
