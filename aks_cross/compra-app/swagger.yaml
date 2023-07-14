@@ -3,7 +3,7 @@ info:
   version: 1.0.0
   title: Servicio compra
 paths:
-  /[endpoint del servicio]:
+  /compra/id:
     get:
       summary: Genera y agrega el numero de compra
       responses:
