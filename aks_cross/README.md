@@ -26,5 +26,5 @@ kubectl apply -f fecha-deployment.yaml
 <br>
 export BACKEND_IP=10.10.10.10
 <br>
-envsubst < impuesto-deployment.yaml | kubectl apply -f -
+sed "s/__BACKEND_IP__/$BACKEND_IP/g" impuesto-deployment.yaml | kubectl apply -f -
 <br>
