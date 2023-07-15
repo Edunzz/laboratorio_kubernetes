@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: inventario-app
-        image: edunzz/kubernetes_lab:inventario-backend
+        image: edunzz/k8s_laboratory:inventario-backend
         ports:
         - containerPort: 3000
 ---
