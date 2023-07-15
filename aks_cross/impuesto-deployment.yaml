@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: impuesto-app
-        image: edunzz/kubernetes_lab:impuesto-cross
+        image: edunzz/k8s_laboratory:impuesto-cross
         env:
         - name: BACKEND_IP
           value: "--BACKEND_IP--"
