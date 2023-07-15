@@ -1,9 +1,9 @@
 # Docker create image and upload
-docker build -t edunzz/kubernetes_lab:inventario-backend .
+docker build -t edunzz/k8s_laboratory:inventario-backend .
 <br>
 docker login
 <br>
-docker push edunzz/kubernetes_lab:inventario-backend
+docker push edunzz/k8s_laboratory:inventario-backend
 <br>
 # Up applications and services AKS
 kubectl apply -f mysql-deployment.yaml
