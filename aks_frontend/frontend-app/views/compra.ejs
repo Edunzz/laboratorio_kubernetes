@@ -2,7 +2,9 @@
 <html>
 <body>
     <h1>Resultado de la Compra</h1>
-    <p><%= resultado %></p>
+    <% for(let key in resultado) { %>
+        <p><%= key %>: <%= resultado[key] %></p>
+    <% } %>
     <a href="/">Volver a la lista de productos</a>
 </body>
 </html>
