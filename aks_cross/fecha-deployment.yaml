@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fecha-app
-        image: edunzz/kubernetes_lab:fecha-demo
+        image: edunzz/k8s_laboratory:fecha-cross
         ports:
         - containerPort: 4000
 ---
