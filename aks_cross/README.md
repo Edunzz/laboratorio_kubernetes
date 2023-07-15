@@ -1,23 +1,23 @@
 # Docker create image and upload
-docker build -t edunzz/kubernetes_lab:impuesto-cross .
+docker build -t edunzz/k8s_laboratory:impuesto-cross .
 <br>
 docker login
 <br>
-docker push edunzz/kubernetes_lab:impuesto-cross
+docker push edunzz/k8s_laboratory:impuesto-cross
 <br>
 <br>
-docker build -t edunzz/kubernetes_lab:fecha-cross .
-<br>
-docker login
-<br>
-docker push edunzz/kubernetes_lab:fecha-cross
-<br>
-<br>
-docker build -t edunzz/kubernetes_lab:compra-cross .
+docker build -t edunzz/k8s_laboratory:fecha-cross .
 <br>
 docker login
 <br>
-docker push edunzz/kubernetes_lab:compra-cross
+docker push edunzz/k8s_laboratory:fecha-cross
+<br>
+<br>
+docker build -t edunzz/k8s_laboratory:compra-cross .
+<br>
+docker login
+<br>
+docker push edunzz/k8s_laboratory:compra-cross
 <br>
 <br>
 
