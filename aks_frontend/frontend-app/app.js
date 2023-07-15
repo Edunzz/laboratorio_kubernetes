@@ -11,9 +11,15 @@ app.get('/', async (req, res) => {
 });
 
 app.get('/compra/:id', async (req, res) => {
-    const response = await fetch(`http://${process.env.CROSS_COMPRA_IP}/compra/${id}`);
-    const resultado = await response.json();
-    res.render('compra', { resultado });
+    try {
+        const { id } = req.params;
+        const response = await fetch(`http://${process.env.CROSS_COMPRA_IP}/compra/${id}`);
+        const resultado = await response.json();
+        res.render('compra', { resultado });
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Se produjo un error al realizar la compra');
+    }
 });
 
 app.listen(3000, () => {
