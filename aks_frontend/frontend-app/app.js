@@ -12,7 +12,7 @@ app.get('/', async (req, res) => {
 
 app.get('/compra/:id', async (req, res) => {
     const response = await fetch(`http://${process.env.CROSS_COMPRA_IP}/compra/${id}`);
-    const resultado = await response.text();
+    const resultado = await response.json();
     res.render('compra', { resultado });
 });
 
