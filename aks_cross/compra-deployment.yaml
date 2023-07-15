@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: compra-app
-        image: edunzz/kubernetes_lab:compra-cross
+        image: edunzz/k8s_laboratory:compra-cross
         ports:
         - containerPort: 3000
 ---
