@@ -17,6 +17,11 @@ spec:
       containers:
       - name: fecha-app
         image: edunzz/k8s_laboratory:fecha-cross
+        env:
+        - name: DT_TENANT
+          value: "--DT_TENANT--"
+        - name: DT_TOKEN
+          value: "--DT_TOKEN--"
         ports:
         - containerPort: 4000
 ---
