@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: edunzz/k8s_laboratory:frontend
+        image: edunzz/k8s_laboratory:frontend-app
         env:
         - name: BACKEND_IP
           value: "--BACKEND_IP--"
