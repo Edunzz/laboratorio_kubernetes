@@ -24,6 +24,10 @@ docker push edunzz/k8s_laboratory:compra-cross
 # Up applications and services AKS
 export BACKEND_IP=10.10.10.10
 <br>
+export DT_TENANT=10.10.10.10
+<br>
+export DT_TENANT=10.10.10.10
+<br>
 sed "s/--BACKEND_IP--/$BACKEND_IP/g" impuesto-deployment.yaml | kubectl apply -f -
 <br>
 kubectl apply -f fecha-deployment.yaml
