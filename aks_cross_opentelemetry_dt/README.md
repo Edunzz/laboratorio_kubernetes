@@ -1,23 +1,23 @@
 # Docker create image and upload
-docker build -t edunzz/k8s_laboratory:impuesto-cross .
+docker build -t edunzz/k8s_laboratory:impuesto-cross-opentelemetry .
 <br>
 docker login
 <br>
-docker push edunzz/k8s_laboratory:impuesto-cross
+docker push edunzz/k8s_laboratory:impuesto-cross-opentelemetry
 <br>
 <br>
-docker build -t edunzz/k8s_laboratory:fecha-cross .
-<br>
-docker login
-<br>
-docker push edunzz/k8s_laboratory:fecha-cross
-<br>
-<br>
-docker build -t edunzz/k8s_laboratory:compra-cross .
+docker build -t edunzz/k8s_laboratory:fecha-cross-opentelemetry .
 <br>
 docker login
 <br>
-docker push edunzz/k8s_laboratory:compra-cross
+docker push edunzz/k8s_laboratory:fecha-cross-opentelemetry
+<br>
+<br>
+docker build -t edunzz/k8s_laboratory:compra-cross-opentelemetry .
+<br>
+docker login
+<br>
+docker push edunzz/k8s_laboratory:compra-cross-opentelemetry
 <br>
 <br>
 
