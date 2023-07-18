@@ -20,8 +20,8 @@ spec:
         env:
         - name: BACKEND_IP
           value: "--BACKEND_IP--"
-        - name: BACKEND_IP
-          value: "--BACKEND_IP--"
+        - name: DT_TENANT
+          value: "--DT_TENANT--"
         - name: BACKEND_IP
           value: "--BACKEND_IP--"
         ports:
