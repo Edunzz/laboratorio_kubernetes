@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: compra-app
-        image: edunzz/k8s_laboratory:compra-cross
+        image: edunzz/k8s_laboratory:compra-cross-opentelemetry
         env:
         - name: DT_TENANT
           value: "--DT_TENANT--"
