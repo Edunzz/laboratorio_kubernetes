@@ -2,9 +2,19 @@
 <html>
 <body>
     <h1>Resultado de la Compra</h1>
-    <% for(let key in resultado) { %>
-        <p><%= key %>: <%= resultado[key] %></p>
-    <% } %>
+    <% 
+    function displayRecursive(obj) {
+        for(let key in obj) {
+            if(typeof obj[key] === 'object' && obj[key] !== null) {
+                %><p><%= key %>:</p><%
+                displayRecursive(obj[key]);
+            } else {
+                %><p><%= key %>: <%= obj[key] %></p><%
+            }
+        }
+    }
+    displayRecursive(resultado);
+    %>
     <a href="/">Volver a la lista de productos</a>
 </body>
 </html>
