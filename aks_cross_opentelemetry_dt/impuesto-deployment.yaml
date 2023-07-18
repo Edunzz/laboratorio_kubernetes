@@ -20,6 +20,10 @@ spec:
         env:
         - name: BACKEND_IP
           value: "--BACKEND_IP--"
+        - name: BACKEND_IP
+          value: "--BACKEND_IP--"
+        - name: BACKEND_IP
+          value: "--BACKEND_IP--"
         ports:
         - containerPort: 5000
 ---
