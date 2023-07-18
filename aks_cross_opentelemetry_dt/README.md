@@ -28,11 +28,11 @@ export DT_TENANT=XXXX.dynatrace.com
 <br>
 export DT_TOKEN=dtxxxx.xxxxxxx
 <br>
-sed "s/--BACKEND_IP--/$BACKEND_IP/g" impuesto-deployment.yaml | kubectl apply -f -
+sed "s/--BACKEND_IP--/$BACKEND_IP/g; s/--DT_TENANT--/$DT_TENANT/g; s/--DT_TOKEN--/$DT_TOKEN/g" impuesto-deployment.yaml | kubectl apply -f -
 <br>
-kubectl apply -f fecha-deployment.yaml
+sed "s/--DT_TENANT--/$DT_TENANT/g; s/--DT_TOKEN--/$DT_TOKEN/g" fecha-deployment.yaml | kubectl apply -f -
 <br>
-kubectl apply -f compra-deployment.yaml
+sed "s/--DT_TENANT--/$DT_TENANT/g; s/--DT_TOKEN--/$DT_TOKEN/g" compra-deployment.yaml | kubectl apply -f -
 <br>
 # Delete applications and services AKS
 kubectl delete -f impuesto-deployment.yaml
