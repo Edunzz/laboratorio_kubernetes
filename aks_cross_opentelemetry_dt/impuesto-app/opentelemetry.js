@@ -24,7 +24,7 @@ diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.DEBUG);
 // Configurar SDK, export (dynatrace) y agregar propiedades de service
 const sdk = new opentelemetry.NodeSDK({
   resource: new Resource({
-    [SemanticResourceAttributes.SERVICE_NAME]: 'demo-node-service2',
+    [SemanticResourceAttributes.SERVICE_NAME]: 'impuestos',
     [SemanticResourceAttributes.SERVICE_VERSION]: '1.0.0',
   }),
   traceExporter: new OTLPTraceExporter({
