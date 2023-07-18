@@ -22,8 +22,8 @@ spec:
           value: "--BACKEND_IP--"
         - name: DT_TENANT
           value: "--DT_TENANT--"
-        - name: BACKEND_IP
-          value: "--BACKEND_IP--"
+        - name: DT_TOKEN
+          value: "--DT_TOKEN--"
         ports:
         - containerPort: 5000
 ---
