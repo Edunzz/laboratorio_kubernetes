@@ -1,0 +1,15 @@
+{
+  "name": "impuesto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "impuesto.js",
+  "scripts": {
+    "start": "node impuesto.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.6",
+    "swagger-ui-express": "^4.3.0",
+    "yamljs": "^0.3.0"
+  }
+}

@@ -1,0 +1,18 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Servicio impuesto
+paths:
+  /impuesto/{id}:
+    get:
+      summary: Obtiene la información de producto y agrega importe y moneda de impuesto
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+          description: ID de producto
+      responses:
+        '200':
+          description: Operación exitosa

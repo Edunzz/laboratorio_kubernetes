@@ -1,0 +1,18 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Servicio fecha
+paths:
+  /fecha/{id}:
+    get:
+      summary: Genera y agrega la fecha
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+          description: ID de producto
+      responses:
+        '200':
+          description: Operación exitosa

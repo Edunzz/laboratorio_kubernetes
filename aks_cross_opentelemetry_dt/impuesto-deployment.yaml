@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: impuesto-deployment
+  labels:
+    app: impuesto-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: impuesto-app
+  template:
+    metadata:
+      labels:
+        app: impuesto-app
+    spec:
+      containers:
+      - name: impuesto-app
+        image: edunzz/k8s_laboratory:impuesto-cross
+        env:
+        - name: BACKEND_IP
+          value: "--BACKEND_IP--"
+        ports:
+        - containerPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: impuesto-app-service
+spec:
+  selector:
+    app: impuesto-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer
