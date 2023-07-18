@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fecha-app
-        image: edunzz/k8s_laboratory:fecha-cross
+        image: edunzz/k8s_laboratory:fecha-cross-opentelemetry
         env:
         - name: DT_TENANT
           value: "--DT_TENANT--"
