@@ -24,13 +24,13 @@ diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.DEBUG);
 // Configurar SDK, export (dynatrace) y agregar propiedades de service
 const sdk = new opentelemetry.NodeSDK({
   resource: new Resource({
-    [SemanticResourceAttributes.SERVICE_NAME]: 'demo-node-service2',
+    [SemanticResourceAttributes.SERVICE_NAME]: 'fecha',
     [SemanticResourceAttributes.SERVICE_VERSION]: '1.0.0',
   }),
   traceExporter: new OTLPTraceExporter({
-    url: "https://vph98389.sprint.dynatracelabs.com/api/v2/otlp/v1/traces",
+    url: `https://${process.env.DT_TENANT}/api/v2/otlp/v1/traces`,
     headers: {
-            Authorization: "Api-Token TOKEN"
+            Authorization: `Api-Token ${process.env.DT_TOKEN}`
     },
   }),
   instrumentations: [getNodeAutoInstrumentations()],
